@@ -31,3 +31,9 @@ module.exports = {
 }
 
 ```
+```javascript
+//package.json
+"scripts" : {
+	"build" : "NODE_ENV='production' && webpack",
+	"start" : "webpack serve"
+```

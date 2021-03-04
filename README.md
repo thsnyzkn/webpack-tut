@@ -31,6 +31,7 @@ module.exports = {
 	mode: process.env.NODE_ENV ==='production' ? 'production' : 'development'
 }
 
+
 ```
 ```javascript
 //package.json
@@ -38,7 +39,13 @@ module.exports = {
 	"build" : "NODE_ENV='production' && webpack",
 	"start" : "webpack serve"
 ```
+### Plugin ve Loader'lar
 
-### Webpack vs Parcel
+- Webpack'te JavaScript dosyaları yüklemek ve derlemek dışında  başka herhangi bir dosya türünü modül'e dönüştürme ya da modül'de kullanmaya hazır hale getirmek için *Loader'lar* kullanılıyor.
 
-### Nuxt'ta konfigurasyon değişikliği nasıl yapılır?
+- *Plugin'lerse* asset'leri(görseller, font dosyaları vs.) yönetme ve düzenleme, template dosyaları üretme, diğer optimizasyon(minification, build clean vs.) işlemleri için kullanılabilmektedir.
+
+
+## Webpack vs Parcel
+
+## Nuxt'ta konfigurasyon değişikliği nasıl yapılır?
